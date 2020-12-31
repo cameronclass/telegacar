@@ -7,7 +7,7 @@
 @import "common/fonts";
 @import "common/preloader";
 @import "common/buttons";
-@import "common/form";
+@import "common/tabs";
 @import "template";
 @import "classes";
 
@@ -22,4 +22,4 @@
 @import "common/sliders";
 
 /* Aos */
-//@import "libs/aos";
+@import "libs/aos";

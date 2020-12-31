@@ -1,0 +1,13 @@
+.header{
+    background-color: $light-grey;
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    &__logo{
+        width: 183px;
+    }
+}

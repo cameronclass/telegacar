@@ -1,0 +1,29 @@
+.footer{
+    padding: 50px 0;
+
+    &__logo{}
+    &__text{
+        text-align: center;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__social{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        li{
+            width: 25px;
+            height: 25px;
+            margin: 0 12px;
+        }
+    }
+    &__help{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

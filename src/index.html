@@ -4,5 +4,322 @@ title: Главная страница
 ---
 
 <main>
-    <h1>Проект Запущен</h1>
+    <section class="container-fluid px-0 offer">
+        <div class="container">
+            <div class="row align-items-center offer__block">
+                <div class="col-lg-6">
+                    <div class="offer__img">
+                        <img src="assets/images/man.png" alt="Изображения">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="offer__text">
+                        <h1>Поиск попутчиков</h1>
+                        <p>Соединяем водителей и пассажиров. Бесплатно. Без регистрации. Без скачиваний</p>
+                        <a href="#" class="btn btn-offer">Открыть telegram бот</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row offer__block">
+                <div class="col-lg-6">
+                    <div class="offer__img-second">
+                        <img src="assets/images/offer-cars-get.png" alt="Изображения">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="offer__text-second mt-5">
+                        <h2>Актуальные предложения от водителей</h2>
+                        <p>Воспользуйтесь нашим ботом, чтобы найти самые последние предложения от водителей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 about">
+        <div class="container">
+            <h2 class="text-center mb-5">Как это работает?</h2>
+            <div class="about__block">
+                <div class="about__icon">
+                    <img src="assets/images/icons/telegram.png" alt="Иконка">
+                </div>
+                <div class="about__icon about__icon-arrow">
+                    <svg class="svgicon css26 css27" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%;">
+                        <rect x="0" y="0" width="70" height="70" style="fill: none" rx="64" ry="64"></rect>
+                        <g transform="scale(0.6) translate(42.66666666666667, 42.66666666666667)">
+                            <path class="st0" d="M69.814,111.82c-2.129,0-4.131-0.828-5.637-2.333l-8.922-8.924c-3.107-3.107-3.107-8.163,0-11.271 L66.27,78.278H18.334c-4.395,0-7.971-3.575-7.971-7.97V57.69c0-4.396,3.576-7.971,7.971-7.971H66.27L55.256,38.706 c-3.105-3.106-3.107-8.162,0-11.271l8.922-8.922c1.508-1.506,3.508-2.334,5.637-2.334c2.127,0,4.129,0.828,5.635,2.333 l30.863,30.863c0.023,0.021,0.045,0.043,0.066,0.064l8.922,8.924c1.391,1.393,2.209,3.247,2.311,5.233 c0.016,0.135,0.023,0.267,0.023,0.401c0,0.104-0.01,0.27-0.023,0.397c-0.105,2-0.924,3.85-2.311,5.237l-8.922,8.924 c-0.021,0.021-0.043,0.043-0.066,0.063l-30.863,30.865C73.943,110.992,71.941,111.82,69.814,111.82z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="about__icon">
+                    <img src="assets/images/icons/telegacar.png" alt="Иконка">
+                </div>
+            </div>
+            <div class="about__description">
+                <p class="about__description-main">Это бесплатное расширение для Telegram, позволяющее быстро находить попутчиков и экономить на поездках.</p>
+                <p class="about__description-secondary">Скачивать ничего не требуется.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 tabs">
+        <div class="container-fluid tabs__yellow">
+            <div class="container">
+                <ul id="tabs-nav">
+                    <li>
+                        <a href="#tab1">
+                            <span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="assets/images/icons/sprite.svg#man"></use>
+                                </svg>
+                            </span>
+                            <span class="mt-2">
+                                Пассажирам
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab2">
+                            <span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="assets/images/icons/sprite.svg#car"></use>
+                                </svg>
+                            </span>
+                            <span class="mt-2">
+                                Водителям
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab3">
+                            <span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="assets/images/icons/sprite.svg#driver-license"></use>
+                                </svg>
+                            </span>
+                            <span class="mt-2">АНКЕТА ВОДИТЕЛЯ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div id="tabs-content">
+                <div id="tab1" class="tab-content">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex flex-column justify-content-center">
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#save-money"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Вы оплачивате только поездку. Сам сервис <b>полностью бесплатный</b>
+                                </span>
+                            </div>
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Чтобы найти поездку <b>нужен только мессенджер</b> Telegram.
+                                </span>
+                            </div>
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#dialog"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Не нашли поездку? <b>Мы сообщим</b> как только она появится.
+                                </span>
+                            </div>
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#man"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    В TelegaCar вы <strong>связываетесь с водителем напрямую</strong>. Мы не прячем его контакты.
+                                </span>
+                            </div>
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#check"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Мы <strong>проверяем личность каждого водителя</strong>. Проверенные водители отмечаются галочкой ✅.
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5 d-flex justify-content-center">
+                            <iframe src="https://player.vimeo.com/video/297550032?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0" width="270" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-content">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex flex-column justify-content-center">
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#save-money"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Создавайте любое количество поездок. <strong>Это бесплатно</strong>
+                                </span>
+                            </div>
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#dialog"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    <strong>Общайтесь с пассажиром</strong> прямо в Telegram.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex justify-content-center">
+                            <iframe src="https://player.vimeo.com/video/297550156?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" width="270" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex flex-column justify-content-center">
+                            <div class="tabs__list">
+                                <span class="tabs__list_icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="assets/images/icons/sprite.svg#man"></use>
+                                    </svg>
+                                </span>
+                                <span class="tabs__list_text">
+                                    Создайте анкету водителя <strong>прямо в мессенджере</strong>.<br>Это займет 1 минуту
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex justify-content-center">
+                            <iframe src="https://player.vimeo.com/video/297548748?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0" width="270" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 economy">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="economy__text">
+                        <h2>Начините экономить на поездках прямо сейчас</h2>
+                        <p>Не нужны дополнительные приложения</p>
+                        <p>Мы не берем оплату за использование сервиса</p>
+                        <div class="economy__line mt-5">
+                            <span class="icon"><img src="assets/images/icons/corner-up-left.svg" alt="Иконка"></span>
+                            <span>Просто откройте нашего бота в Telegram</span>
+                        </div>
+                        <a href="#" class="btn btn-offer btn-white mb-5 mt-4">Открыть telegram бот</a>
+                        <p>Или найдите с помощью поиска в Telegram: <b>@telegacar_bot</b></p>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="economy__img">
+                        <img src="assets/images/man-2.jpg" alt="Изображения">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 how-use">
+        <div class="container">
+            <h2 class="text-center">Как пользоваться ботом?</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="how-use__line how-use__line--left">
+                        <img src="assets/images/icons/corner-up-left.svg" alt="Иконка">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="how-use__img">
+                        <img src="assets/images/icons/telegacar.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="how-use__line how-use__line--right">
+                        <img src="assets/images/icons/corner-up-left.svg" alt="Иконка">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="how-use__block">
+                        <div class="how-use__subtitle">Пассажирам</div>
+                        <ol>
+                            <li>Установите приложение Telegram, если у вас его нет. Ссылки на скачивание в разделе ниже.</li>
+                            <li>Откройте бот TelegaCar по ссылке или найдите в поиске Telegram – @telegacar_bot</li>
+                            <li>Нажмите "Начать" (Start).</li>
+                            <li>Далее следуйте инструкции из видео</li>
+                        </ol>
+                        <a href="#">ВИДЕО: ПОИСК ПОЕЗДОК</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="how-use__block">
+                        <div class="how-use__subtitle">Водителям</div>
+                        <ol>
+                            <li>Установите приложение Telegram, если у вас его нет. Ссылки на скачивание в разделе ниже.</li>
+                            <li>Откройте бот TelegaCar по ссылке или найдите в поиске Telegram – @telegacar_bot</li>
+                            <li>Нажмите "Начать" (Start).</li>
+                            <li>Далее следуйте инструкции из видео</li>
+                        </ol>
+                        <a href="#">ВИДЕО: АНКЕТА ВОДИТЕЛЯ</a>
+                        <a href="#">ВИДЕО: ДОБАВЛЕНИЕ ПОЕЗДКИ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="content mt-4">
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__header">У МЕНЯ НЕТ ТЕЛЕГРАМ. ГДЕ СКАЧАТЬ?</div>
+                        <div class="accordion__body">
+                            <h4>Выберите версию для своего устройства</h4>
+                            <ul>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                                <li><a href="#">Скачать для iPhone / iPad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">ЧТО ТАКОЕ БОТ ДЛЯ ТЕЛЕГРАМ?</div>
+                        <div class="accordion__body">
+                            <p>Бот – это своего рода приложение, которое работает прямо внутри мессенджера. Для того, чтобы его запустить, у вас должен быть установлен мессенджер Telegram. После этого перейдите по ссылкам выше или найдите в поиске мессенджера @telegacar_bot.
+                            <br> Бот не требует никаких дополнительных загрузок или установок, что экономит место на вашем устройстве.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">ПОЧЕМУ У ВАС ВСЁ БЕСПЛАТНО? ТАК НЕ БЫВАЕТ</div>
+                        <div class="accordion__body">
+                            <p>Это правда, мы не альтруисты. Но мы не планируем зарабатывать с помощью продажи подписки или платных регистраций. В будущем проект будет монетизироваться с помощью рекламной рассылки. Это не будет поток спама. Реклама будет тщательно подбираться и рассылаться небольшими порциями, 1-2 раза в неделю. На данный момент, нет никакой рекламы.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
