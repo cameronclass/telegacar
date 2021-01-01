@@ -2,10 +2,18 @@
     padding: 50px 0;
 
     &__logo {
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
     }
     &__text {
         text-align: center;
-        @include mobile{
+        @include mobile {
             margin: 20px 0;
         }
     }
@@ -24,7 +32,7 @@
         display: flex;
         align-items: center;
 
-        @include mobile{
+        @include mobile {
             justify-content: center;
             margin: 20px 0;
         }
@@ -40,7 +48,7 @@
         display: flex;
         justify-content: flex-end;
 
-        @include mobile{
+        @include mobile {
             justify-content: center;
         }
     }
