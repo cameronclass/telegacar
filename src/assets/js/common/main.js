@@ -38,6 +38,27 @@ $(document).ready(function () {
     $(this).closest(".accordion__item").toggleClass("open-accordion");
   });
 
+  $(".js-modal").click(function (e) {
+    e.preventDefault();
+    $(".modal-1").fadeIn("fast");
+  });
+  $(".js-modal-2").click(function (e) {
+    e.preventDefault();
+    $(".modal-2").fadeIn("fast");
+  });
+  $(".js-modal-3").click(function (e) {
+    e.preventDefault();
+    $(".modal-3").fadeIn("fast");
+  });
+  $(".js-modal-4").click(function (e) {
+    e.preventDefault();
+    $(".modal-4").fadeIn("fast");
+  });
+
+  $(".modal__close, .modal__overlay").click(function(){
+    $(".modal").fadeOut("fast");
+  });
+
   AOS.init({
     once: true,
     anchorPlacement: "bottom-bottom",

@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
 
-    @include mobile{
+    @include tablet{
         justify-content: space-between;
     }
 }
 
 #tabs-nav li {
-    @include mobile {
+    @include tablet {
         width: 33%;
     }
 }
@@ -32,7 +32,7 @@
         fill: black;
     }
 
-    @include mobile{
+    @include tablet{
         font-size: 12px;
         padding: 20px 0;
         margin: 0 0px;
@@ -91,7 +91,7 @@
     position: relative;
     cursor: pointer;
 
-    @include mobile{
+    @include tablet{
         font-size: 16px;
     }
 }

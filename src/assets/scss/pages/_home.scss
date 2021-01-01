@@ -3,7 +3,7 @@
     padding: 0;
     margin-top: -50px;
 
-    @include mobile {
+    @include tablet {
         padding-bottom: 120px;
     }
 
@@ -16,7 +16,7 @@
         position: relative;
         top: 45px;
         z-index: 2;
-        @include mobile {
+        @include tablet {
             display: none;
         }
         img {
@@ -33,7 +33,7 @@
     &__text {
         text-align: right;
 
-        @include mobile {
+        @include tablet {
             text-align: left;
             margin-bottom: 50px;
         }
@@ -44,6 +44,11 @@
             width: 100%;
             max-width: 440px;
             margin-bottom: 50px;
+
+            @include tablet{
+                margin-right: auto;
+                margin-left: inherit;
+            }
         }
 
         &-second {
@@ -117,7 +122,7 @@
             font-size: 18px;
             font-weight: 500;
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
             }
         }
@@ -133,7 +138,7 @@
             object-fit: contain;
             object-position: right;
 
-            @include mobile {
+            @include tablet {
                 object-position: center;
             }
         }
@@ -142,7 +147,7 @@
     &__text {
         font-size: 20px;
 
-        @include mobile {
+        @include tablet {
             font-size: 16px;
         }
     }
@@ -158,7 +163,7 @@
             bottom: -13px;
         }
 
-        @include mobile {
+        @include tablet {
             margin-left: 90px;
         }
     }
@@ -188,7 +193,7 @@
             }
         }
 
-        @include mobile {
+        @include tablet {
             display: none;
         }
     }
@@ -250,7 +255,7 @@
         li {
             width: 31.333%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
 
