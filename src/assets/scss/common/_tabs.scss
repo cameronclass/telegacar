@@ -3,6 +3,16 @@
     margin: 0;
     display: flex;
     justify-content: center;
+
+    @include mobile{
+        justify-content: space-between;
+    }
+}
+
+#tabs-nav li {
+    @include mobile {
+        width: 33%;
+    }
 }
 #tabs-nav li a {
     font-weight: bold;
@@ -21,10 +31,24 @@
         height: 60px;
         fill: black;
     }
+
+    @include mobile{
+        font-size: 12px;
+        padding: 20px 0;
+        margin: 0 0px;
+        text-align: center;
+
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+#tabs-nav li.active{
+    position: relative;
 }
 #tabs-nav li.active a {
     color: #053fa9;
-    position: relative;
 
     svg {
         fill: #053fa9;
@@ -66,6 +90,10 @@
     color: black;
     position: relative;
     cursor: pointer;
+
+    @include mobile{
+        font-size: 16px;
+    }
 }
 .accordion__header::after {
     content: "";
@@ -79,8 +107,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    background: url("../images/icons/arrow-down-black.svg")
-        no-repeat center;
+    background: url("../images/icons/arrow-down-black.svg") no-repeat center;
     background-size: 45% 50%;
     background-color: $yellow;
     transition: all 0.4s ease;

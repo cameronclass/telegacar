@@ -1,29 +1,47 @@
-.footer{
+.footer {
     padding: 50px 0;
 
-    &__logo{}
-    &__text{
-        text-align: center;
+    &__logo {
     }
-    &__block{
+    &__text {
+        text-align: center;
+        @include mobile{
+            margin: 20px 0;
+        }
+    }
+    &__block {
         display: flex;
         align-items: center;
         height: 100%;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
-    &__social{
+    &__social {
         width: 100%;
         display: flex;
         align-items: center;
 
-        li{
+        @include mobile{
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        li {
             width: 25px;
             height: 25px;
             margin: 0 12px;
         }
     }
-    &__help{
+    &__help {
         width: 100%;
         display: flex;
         justify-content: flex-end;
+
+        @include mobile{
+            justify-content: center;
+        }
     }
 }

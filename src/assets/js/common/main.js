@@ -11,16 +11,6 @@ $(document).ready(function () {
     }
   }); */
 
-  /* AOS.init({
-    once: true,
-    anchorPlacement: "bottom-bottom",
-    duration: 800,
-  });
-
-  onElementHeightChange(document.body, function () {
-    AOS.refresh();
-  }); */
-
   // Show the first tab and hide the rest
   $("#tabs-nav li:first-child").addClass("active");
   $(".tab-content").hide();
@@ -46,5 +36,15 @@ $(document).ready(function () {
       .not($(this).closest(".accordion__item"))
       .removeClass("open-accordion");
     $(this).closest(".accordion__item").toggleClass("open-accordion");
+  });
+
+  AOS.init({
+    once: true,
+    anchorPlacement: "bottom-bottom",
+    duration: 800,
+  });
+
+  onElementHeightChange(document.body, function () {
+    AOS.refresh();
   });
 });

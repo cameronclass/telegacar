@@ -5,11 +5,15 @@
     color: black;
     font-weight: 500;
     display: inline-block;
+
+    box-shadow: $box-shadow;
     
 
     &:hover{
         color: black;
-        background-color:darken($color: $yellow, $amount: 3);
+        background-color:darken($color: $yellow, $amount: 2);
+        transform: translate(4px, 4px);
+        box-shadow: none;
     }
 
     &-offer{

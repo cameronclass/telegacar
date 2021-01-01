@@ -3,6 +3,10 @@
     padding: 0;
     margin-top: -50px;
 
+    @include mobile {
+        padding-bottom: 120px;
+    }
+
     &__block {
         position: relative;
         top: 100px;
@@ -12,6 +16,9 @@
         position: relative;
         top: 45px;
         z-index: 2;
+        @include mobile {
+            display: none;
+        }
         img {
             width: auto;
             object-fit: contain;
@@ -25,6 +32,11 @@
     }
     &__text {
         text-align: right;
+
+        @include mobile {
+            text-align: left;
+            margin-bottom: 50px;
+        }
 
         p {
             margin-left: auto;
@@ -104,6 +116,10 @@
         &_text {
             font-size: 18px;
             font-weight: 500;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -116,11 +132,19 @@
             height: 400px;
             object-fit: contain;
             object-position: right;
+
+            @include mobile {
+                object-position: center;
+            }
         }
     }
 
     &__text {
         font-size: 20px;
+
+        @include mobile {
+            font-size: 16px;
+        }
     }
 
     &__line {
@@ -133,6 +157,10 @@
             left: -40px;
             bottom: -13px;
         }
+
+        @include mobile {
+            margin-left: 90px;
+        }
     }
 }
 
@@ -141,6 +169,7 @@
 
     &__line {
         height: 100%;
+
         img {
             width: 120px;
         }
@@ -158,6 +187,10 @@
                 transform: rotateY(180deg);
             }
         }
+
+        @include mobile {
+            display: none;
+        }
     }
     &__img {
         display: flex;
@@ -173,29 +206,29 @@
         }
     }
 
-    &__block{
+    &__block {
         margin-top: 50px;
     }
-    &__subtitle{
+    &__subtitle {
         font-size: 28px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 30px;
     }
 
-    ol{
+    ol {
         width: 100%;
         max-width: 420px;
         margin: 0 0 25px;
         padding: 0 0 0 16px;
-        li{
+        li {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 10px;
         }
     }
 
-    a{
+    a {
         font-size: 16px;
         font-weight: 500;
         display: block;
@@ -203,7 +236,33 @@
     }
 }
 
-.faq{
+.faq {
     background-color: $light-grey;
     padding: 50px 0;
+    overflow: hidden;
+}
+
+.accordion__body {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 31.333%;
+
+            @include mobile {
+                width: 100%;
+            }
+
+            a {
+                width: 100%;
+                text-align: center;
+                box-shadow: 3px 3px 0 darken($color: $yellow, $amount: 10);
+
+                &:hover {
+                    transform: translate(3px, 3px);
+                }
+            }
+        }
+    }
 }

@@ -17,7 +17,7 @@ a {
     &:hover {
         text-decoration: none;
     }
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
@@ -52,9 +52,17 @@ h6 {
 
 h1 {
     font-size: 48px;
+
+    @include mobile {
+        font-size: 40px;
+    }
 }
 h2 {
     font-size: 40px;
+
+    @include mobile {
+        font-size: 32px;
+    }
 }
 h3 {
     font-size: 30px;
